@@ -27,7 +27,7 @@ public class LoginResultActivity extends AppCompatActivity {
         String email = bundle.getString("email");
         String password = bundle.getString("password");
 
-        TextView_get.setText("Eamil = " + email + "    " + "Password = " + password);
+        TextView_get.setText("Eamil = " + email +  "\n" + "Password = " + password);
 
 
 
