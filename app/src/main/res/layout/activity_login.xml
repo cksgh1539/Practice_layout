@@ -34,6 +34,7 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:layout_marginBottom="15dp"
+            android:id="@+id/Input_email"
             >
 
         </com.google.android.material.textfield.TextInputEditText>
@@ -49,12 +50,13 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:layout_marginBottom="30dp"
+            android:id="@+id/Input_password"
             >
 
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
-<LinearLayout
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:orientation="horizontal"
@@ -73,6 +75,8 @@
         android:background="@null"
         android:src="@drawable/user"
         android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
 
 
         />
@@ -85,9 +89,10 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:textSize="20sp"
+        android:layout_centerInParent="true"
 
         />
-</LinearLayout>
+</RelativeLayout>
 
 
     <TextView
@@ -99,7 +104,7 @@
         android:layout_marginBottom="15dp"
         />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -118,6 +123,8 @@
             android:background="@null"
             android:src="@drawable/face"
             android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
             />
         <TextView
 
@@ -128,10 +135,11 @@
             android:gravity="center"
             android:layout_gravity="center"
             android:textSize="20sp"
+            android:layout_centerVertical="true"
 
 
             />
-    </LinearLayout>
+    </RelativeLayout>
 
 
 
